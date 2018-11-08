@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-20,0,0,3,95"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="Header">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="40" width="862" height="40"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="UnJamoBatang" size="15" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="nDpi Filter"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="0" width="862" height="33"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="Body">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="80" width="862" height="365"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="90" y="20" width="680" height="110"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
+                      <Component id="jLabelFilter" min="-2" pref="170" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="jCheckBoxName" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="120" max="32767" attributes="0"/>
+                      <Component id="jCheckBoxNetwork" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="jCheckBoxApplication" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jLabelFilter" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jCheckBoxName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBoxNetwork" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBoxApplication" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabelFilter">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="Select a filter:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxName">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Protocol Name"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxNameActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxNetwork">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Network"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxNetworkActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBoxApplication">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Application"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBoxApplicationActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="90" y="120" width="670" height="70"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="159" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                      <Component id="jComboBoxCondition" min="-2" pref="60" max="-2" attributes="0"/>
+                      <EmptySpace pref="303" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBoxCondition" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Select a condition:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxCondition">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="=="/>
+                    <StringItem index="1" value="&lt;"/>
+                    <StringItem index="2" value="&gt;"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="70" y="200" width="720" height="70"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                      <Component id="jLabelProtocols" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                      <Component id="jComboBoxProtocol" min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace pref="238" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabelProtocols" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="jComboBoxProtocol" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabelProtocols">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Select a protocol:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxProtocol">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="189">
+                    <StringItem index="0" value="FTP"/>
+                    <StringItem index="1" value="POP"/>
+                    <StringItem index="2" value="SMTP"/>
+                    <StringItem index="3" value="IMAP"/>
+                    <StringItem index="4" value="DNS"/>
+                    <StringItem index="5" value="IPP"/>
+                    <StringItem index="6" value="HTTP"/>
+                    <StringItem index="7" value="MDNS"/>
+                    <StringItem index="8" value="NTP"/>
+                    <StringItem index="9" value="NETBIOS"/>
+                    <StringItem index="10" value="NFS"/>
+                    <StringItem index="11" value="SSDP"/>
+                    <StringItem index="12" value="BGP"/>
+                    <StringItem index="13" value="SNMP"/>
+                    <StringItem index="14" value="XDMCP"/>
+                    <StringItem index="15" value="SMB"/>
+                    <StringItem index="16" value="SYSLOG"/>
+                    <StringItem index="17" value="DHCP"/>
+                    <StringItem index="18" value="PostgreeSQL"/>
+                    <StringItem index="19" value="MySQL"/>
+                    <StringItem index="20" value="TDS"/>
+                    <StringItem index="21" value="DirectDownloadLink"/>
+                    <StringItem index="22" value="I23V5"/>
+                    <StringItem index="23" value="AppleJuice"/>
+                    <StringItem index="24" value="DirectConnect"/>
+                    <StringItem index="25" value="Socrates"/>
+                    <StringItem index="26" value="WinMX"/>
+                    <StringItem index="27" value="VMware"/>
+                    <StringItem index="28" value="PANDO"/>
+                    <StringItem index="29" value="Filetopia"/>
+                    <StringItem index="30" value="iMESH"/>
+                    <StringItem index="31" value="Kontiki"/>
+                    <StringItem index="32" value="OpenFT"/>
+                    <StringItem index="33" value="Kazaa"/>
+                    <StringItem index="34" value="Fasttrack"/>
+                    <StringItem index="35" value="Gnutella"/>
+                    <StringItem index="36" value="eDonkey"/>
+                    <StringItem index="37" value="BitTorrent"/>
+                    <StringItem index="38" value="OFF"/>
+                    <StringItem index="39" value="AVI"/>
+                    <StringItem index="40" value="Flash"/>
+                    <StringItem index="41" value="OGG"/>
+                    <StringItem index="42" value="MPEG"/>
+                    <StringItem index="43" value="QuickTime"/>
+                    <StringItem index="44" value="RealMedia"/>
+                    <StringItem index="45" value="Windowsmedia"/>
+                    <StringItem index="46" value="MMS"/>
+                    <StringItem index="47" value="XBOX"/>
+                    <StringItem index="48" value="QQ"/>
+                    <StringItem index="49" value="MOVE"/>
+                    <StringItem index="50" value="RTSP"/>
+                    <StringItem index="51" value="Feidian"/>
+                    <StringItem index="52" value="Icecast"/>
+                    <StringItem index="53" value="PPLive"/>
+                    <StringItem index="54" value="PPStream"/>
+                    <StringItem index="55" value="Zattoo"/>
+                    <StringItem index="56" value="SHOUTCast"/>
+                    <StringItem index="57" value="SopCast"/>
+                    <StringItem index="58" value="TVAnts"/>
+                    <StringItem index="59" value="TVUplayer"/>
+                    <StringItem index="60" value="VeohTV"/>
+                    <StringItem index="61" value="QQLive"/>
+                    <StringItem index="62" value="Thunder"/>
+                    <StringItem index="63" value="Webthunder"/>
+                    <StringItem index="64" value="Soulseek"/>
+                    <StringItem index="65" value="GaduGadu"/>
+                    <StringItem index="66" value="IRC"/>
+                    <StringItem index="67" value="Popo"/>
+                    <StringItem index="68" value="Jabber"/>
+                    <StringItem index="69" value="MSN"/>
+                    <StringItem index="70" value="Oscar"/>
+                    <StringItem index="71" value="Yahoo"/>
+                    <StringItem index="72" value="Battlefield"/>
+                    <StringItem index="73" value="Quake"/>
+                    <StringItem index="74" value="VRRP"/>
+                    <StringItem index="75" value="Steam"/>
+                    <StringItem index="76" value="Halflife2"/>
+                    <StringItem index="77" value="World of Warcraft"/>
+                    <StringItem index="78" value="Telnet"/>
+                    <StringItem index="79" value="STUN"/>
+                    <StringItem index="80" value="IPSEC"/>
+                    <StringItem index="81" value="GRE"/>
+                    <StringItem index="82" value="ICMP"/>
+                    <StringItem index="83" value="IGMP"/>
+                    <StringItem index="84" value="EGP"/>
+                    <StringItem index="85" value="SCTP"/>
+                    <StringItem index="86" value="OSPF"/>
+                    <StringItem index="87" value="IP in IP"/>
+                    <StringItem index="88" value="RTP"/>
+                    <StringItem index="89" value="RDP"/>
+                    <StringItem index="90" value="VNC"/>
+                    <StringItem index="91" value="PCAnywhere"/>
+                    <StringItem index="92" value="SSL"/>
+                    <StringItem index="93" value="SSH"/>
+                    <StringItem index="94" value="USENET"/>
+                    <StringItem index="95" value="MGCP"/>
+                    <StringItem index="96" value="IAX"/>
+                    <StringItem index="97" value="TFTP"/>
+                    <StringItem index="98" value="AFP"/>
+                    <StringItem index="99" value="StealthNet"/>
+                    <StringItem index="100" value="Aimini"/>
+                    <StringItem index="101" value="SIP"/>
+                    <StringItem index="102" value="Truphone"/>
+                    <StringItem index="103" value="ICMPv6"/>
+                    <StringItem index="104" value="DHCPv6"/>
+                    <StringItem index="105" value="Armagetron"/>
+                    <StringItem index="106" value="CrossFire"/>
+                    <StringItem index="107" value="Dofus"/>
+                    <StringItem index="108" value="Fiesta"/>
+                    <StringItem index="109" value="Florensia"/>
+                    <StringItem index="110" value="Guildwars"/>
+                    <StringItem index="111" value="HTTP Application Activesync"/>
+                    <StringItem index="112" value="Kerberos"/>
+                    <StringItem index="113" value="LDAP"/>
+                    <StringItem index="114" value="MapleStory"/>
+                    <StringItem index="115" value="msSQL"/>
+                    <StringItem index="116" value="PPTP"/>
+                    <StringItem index="117" value="WARCRAFT3"/>
+                    <StringItem index="118" value="World of Kung Fu"/>
+                    <StringItem index="119" value="MEEBO"/>
+                    <StringItem index="120" value="Facebook"/>
+                    <StringItem index="121" value="Twitter"/>
+                    <StringItem index="122" value="Dropbox"/>
+                    <StringItem index="123" value="Gmail"/>
+                    <StringItem index="124" value="Google Maps"/>
+                    <StringItem index="125" value="YouTube"/>
+                    <StringItem index="126" value="Skype"/>
+                    <StringItem index="127" value="Google"/>
+                    <StringItem index="128" value="DCE RPC"/>
+                    <StringItem index="129" value="NetFlow_IPFIX"/>
+                    <StringItem index="130" value="sFlow"/>
+                    <StringItem index="131" value="HTTP Connect"/>
+                    <StringItem index="132" value="HTTP Proxy"/>
+                    <StringItem index="133" value="Netflix"/>
+                    <StringItem index="134" value="Citrix"/>
+                    <StringItem index="135" value="CitrixOnline"/>
+                    <StringItem index="136" value="GotoMeeting"/>
+                    <StringItem index="137" value="Apple"/>
+                    <StringItem index="138" value="Webex"/>
+                    <StringItem index="139" value="WhatsApp"/>
+                    <StringItem index="140" value="Apple iCloud"/>
+                    <StringItem index="141" value="Viber"/>
+                    <StringItem index="142" value="Apple iTunes"/>
+                    <StringItem index="143" value="Radius"/>
+                    <StringItem index="144" value="WindowsUpdate"/>
+                    <StringItem index="145" value="TeamViewer"/>
+                    <StringItem index="146" value="Tuenti"/>
+                    <StringItem index="147" value="LotusNotes"/>
+                    <StringItem index="148" value="SAP"/>
+                    <StringItem index="149" value="GTP"/>
+                    <StringItem index="150" value="UPnP"/>
+                    <StringItem index="151" value="LLMNR"/>
+                    <StringItem index="152" value="RemoteScan"/>
+                    <StringItem index="153" value="Spotify"/>
+                    <StringItem index="154" value="H323"/>
+                    <StringItem index="155" value="OpenVPN"/>
+                    <StringItem index="156" value="NOE"/>
+                    <StringItem index="157" value="CiscoVPN"/>
+                    <StringItem index="158" value="TeamSpeak"/>
+                    <StringItem index="159" value="Tor"/>
+                    <StringItem index="160" value="CiscoSkinny"/>
+                    <StringItem index="161" value="RTCP"/>
+                    <StringItem index="162" value="RSYNC"/>
+                    <StringItem index="163" value="Oracle"/>
+                    <StringItem index="164" value="Corba"/>
+                    <StringItem index="165" value="UbuntuONE"/>
+                    <StringItem index="166" value="CNN"/>
+                    <StringItem index="167" value="Wikipedia"/>
+                    <StringItem index="168" value="Whois-DAS"/>
+                    <StringItem index="169" value="Collectd"/>
+                    <StringItem index="170" value="Redis"/>
+                    <StringItem index="171" value="ZeroMQ"/>
+                    <StringItem index="172" value="Megaco"/>
+                    <StringItem index="173" value="QUIC"/>
+                    <StringItem index="174" value="WhatsApp Voice"/>
+                    <StringItem index="175" value="Stracraft"/>
+                    <StringItem index="176" value="Teredo"/>
+                    <StringItem index="177" value="Snapchat"/>
+                    <StringItem index="178" value="Simet"/>
+                    <StringItem index="179" value="OpenSignal"/>
+                    <StringItem index="180" value="99Taxi"/>
+                    <StringItem index="181" value="GloboTV"/>
+                    <StringItem index="182" value="Deezer"/>
+                    <StringItem index="183" value="Instagram"/>
+                    <StringItem index="184" value="Microsoft cloud services"/>
+                    <StringItem index="185" value="Twitch"/>
+                    <StringItem index="186" value="KakaoTalk Voice"/>
+                    <StringItem index="187" value="KakaoTalk Chat"/>
+                    <StringItem index="188" value="HotspotShield VPN"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxProtocolActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="90" y="270" width="740" height="70"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="jLabelValues" min="-2" pref="120" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                      <Component id="jComboBoxFormat" min="-2" pref="60" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="jComboBoxValues" min="-2" pref="70" max="-2" attributes="0"/>
+                      <EmptySpace pref="298" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabelValues" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBoxFormat" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jComboBoxValues" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="26" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabelValues">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Select a value:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxFormat">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="3">
+                    <StringItem index="0" value="dec"/>
+                    <StringItem index="1" value="hex"/>
+                    <StringItem index="2" value="oct"/>
+                  </StringArray>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxFormatActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="jComboBoxValues">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                  <StringArray count="0"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="Footer">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="445" width="860" height="50"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace pref="540" max="32767" attributes="0"/>
+                  <Component id="ipAddFilter" min="-2" pref="101" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="ipSeeFilter" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="IpBack" min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="ipAddFilter" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="IpBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ipSeeFilter" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="IpBack">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/back.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Back"/>
+            <Property name="alignmentY" type="float" value="0.0"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="IpBackActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="ipSeeFilter">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/find.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="See Filter"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ipSeeFilterActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="ipAddFilter">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/add.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add Filter"/>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[93, 23]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[93, 23]"/>
+            </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[93, 23]"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ipAddFilterActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

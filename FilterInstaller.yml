@@ -1,0 +1,11 @@
+---
+- hosts: 127.0.0.1
+  tasks:
+  - name: ensure {{item}} is in the latest version
+    apt: name={{item}} state=latest 
+    with_items: [ wireshark, libndpi-bin, lua5.2, default-jdk, tcpdump, dialog, iproute2 ]
+  - name: copy ndpiReader to the Wireshark's extcap
+    shell: cp ndpiReader /usr/lib/x86_64-linux-gnu/wireshark/extcap/
+  - name: copy ndpi.lua to the Wireshark's plugins
+    copy: src=ndpi.lua dest=/usr/lib/x86_64-linux-gnu/wireshark/plugins/
+
