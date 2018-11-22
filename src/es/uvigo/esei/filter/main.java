@@ -7,9 +7,9 @@ package es.uvigo.esei.filter;
 
 /**
  *
- * @author bruno
+ * @author Bruno
  */
-public class main {
+public class Main {
     
     public static void main(String[] args){
         /*Make the call to MenuFrame, which opens the main menu.*/

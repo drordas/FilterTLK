@@ -1,0 +1,91 @@
+---
+#Note: This playbook only works in Ubuntu Systems
+- hosts: dest
+  vars:
+     dest_dir: "/opt/filter.tlk/" #Change the installation directory
+
+  tasks:
+  - name: ensure {{item}} is in the latest version
+    apt: 
+       name: "{{item}}" 
+       state: latest 
+    with_items: [ "wireshark", "libndpi-bin", "lua5.2", "default-jdk", "tcpdump", "dialog", "iproute2" ]
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: copy ndpiReader to the Wireshark's extcap
+    copy:
+       src: ndpiReader
+       dest: /usr/lib/x86_64-linux-gnu/wireshark/extcap/
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: copy ndpi.lua to the Wireshark's plugins
+    copy:
+       src: ndpi.lua
+       dest: /usr/lib/x86_64-linux-gnu/wireshark/plugins/
+    when: ansible_distribution == 'Ubuntu'
+
+  - name: Remove previous installation
+    file:
+      path: "{{ dest_dir }}"
+      state: absent
+
+  - name: Create directory for compiling source
+    file:
+      path: /tmp/src/dest
+      state: directory
+
+  - name: install additional tools
+    copy:
+      src: "{{ item }}"
+      dest: "/tmp/src"
+    with_items:
+       - beansbinding-1.2.1.jar
+       - AbsoluteLayout.jar
+
+  - name: Synchronize source
+    synchronize: 
+      src: src
+      dest: /tmp/src
+      mode: push
+  
+  - name: compile src
+    shell: javac -classpath ../dest:../AbsoluteLayout.jar:../beansbinding-1.2.1.jar -d ../dest es/uvigo/esei/filter/*.java
+    args: 
+      chdir: /tmp/src/src
+  
+  - name: make jar file
+    shell: |
+       echo Main-Class: es.uvigo.esei.filter.Main > ../mf.txt
+       jar xf ../beansbinding-1.2.1.jar
+       jar xf ../AbsoluteLayout.jar
+       mkdir -p es/uvigo/esei/images
+       cp ../src/es/uvigo/esei/images/* es/uvigo/esei/images/
+       jar cfm ../BDAT.jar ../mf.txt * 
+    args: 
+      chdir: /tmp/src/dest
+
+  - name: Create installation destination dir
+    file:
+      path: "{{ dest_dir }}/bin"
+      state: directory
+
+  - name: install BDAT
+    shell: mv /tmp/src/BDAT.jar {{ dest_dir }}/bin
+
+  - name: install additional tools
+    copy:
+      src: "{{ item }}"
+      dest: "{{ dest_dir }}/bin"
+    with_items: ['IPTRB.sh', 'BTT.lua']
+  
+  - name: clean compilation dir
+    file:
+      path: "/tmp/src"
+      state: absent
+
+  - name: Print information
+    debug: 
+      msg: |
+        Filter.tlk sucessfully installed in {{ dest_dir }}.
+        Tools have been included in {{ dest_dir }}/bin/
+        To launch BTT use wireshark -X lua_script:{{ dest_dir }}/bin/BTT.lua
