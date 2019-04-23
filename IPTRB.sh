@@ -1,19 +1,19 @@
 #!/bin/bash
 
-if [ "$(which tcpdump)" -eq "" ]
+if [ "$(which tcpdump)" == "" ]
 then
    echo "Please install tcpdump package. i.e."
    echo "apt-get install tcpdump"
    exit
 fi 
 
-if [ "$(which iptables)" -eq "" ]
+if [ "$(which iptables)" == "" ]
 then
    echo "Your system does not support iptables"
    exit
 fi
 
-if [ test "$(which dialog)" -eq "" ]
+if [ test "$(which dialog)" == "" ]
 then
    echo "Please install dialog package. i.e."
    echo "apt-get install dialog"
