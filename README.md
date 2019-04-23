@@ -13,7 +13,7 @@ FilterTLK: BPF Rule Creator
 * ansible
 
 
-## Installation instruction on Ansible
+## Installation instructions for Ansible
 
 1. Edit hosts file to adjust destination computer/s to install the toolkit (localhost by default).
 2. Customize your ansible preferences (if required) using the file ansible.cfg
