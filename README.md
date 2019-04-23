@@ -1,10 +1,45 @@
-# FilterAnalyzer
-FilterAnalyzer: BPF Rule Creator
+# FilterTLK
+FilterTLK: BPF Rule Creator
 
 Netbeans project for BPF Rule Creator
 
-How to execute application: 
+Required libraries
+
+* wireshark
+* libndpi-bin
+* lua5.2
+* default-jdk
+* tcpdump
+* dialog
+* iproute2
+* snsible
+
+
+## Installation instruction on Ansible
+
+1. Edit hosts file to adjust destination computer/s to install the toolkit (localhost by default).
+2. Customize your ansible preferences (if required) using the file ansible.cfg
+3. Execute ansible using the following command.
 
 ```
-  java -jar dist/FilterAnalyzer.jar
+  ansible-playbook FilterTLK.yml 
+```
+
+## Run application
+
+FilterTLK GUI Application
+
+```
+  java -jar /opt/filter.tlk/bin/BDAT.jar
+```
+Test generated BPF expressions
+
+```
+  wireshark -X lua_script:/opt/filter.tlk/bin/BTT.lua
+```
+
+Generate IPTables rules
+
+```
+  /opt/filter.tlk/bin/IPTRB.sh
 ```
