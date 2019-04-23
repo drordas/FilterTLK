@@ -1,8 +1,6 @@
 # FilterTLK
 FilterTLK: BPF Rule Creator
 
-Netbeans project for BPF Rule Creator
-
 Required libraries
 
 * wireshark
