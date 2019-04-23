@@ -12,7 +12,7 @@ Required libraries
 * tcpdump
 * dialog
 * iproute2
-* snsible
+* ansible
 
 
 ## Installation instruction on Ansible
