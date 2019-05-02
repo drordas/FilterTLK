@@ -48,4 +48,4 @@ Generate IPTables rules
 
 Bruno Cruz González.
 
-![Iryna Yevseyeva](https://scholar.google.com.ua/citations?user=ACBBH4AAAAAJ&hl=en).
+[Iryna Yevseyeva](https://scholar.google.com.ua/citations?user=ACBBH4AAAAAJ&hl=en).
