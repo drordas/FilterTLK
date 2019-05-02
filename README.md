@@ -41,3 +41,9 @@ Generate IPTables rules
 ```
   /opt/filter.tlk/bin/IPTRB.sh
 ```
+
+## Developers
+
+[David Ruano Ordás](http://www.drordas.info)
+Bruno Cruz González
+[Iryna Yevseyeva](https://scholar.google.com.ua/citations?user=ACBBH4AAAAAJ&hl=en)
