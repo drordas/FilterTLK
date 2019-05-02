@@ -44,6 +44,6 @@ Generate IPTables rules
 
 ## Developers
 
-[David Ruano Ordás](http://www.drordas.info)
+![David Ruano Ordás](http://www.drordas.info)
 Bruno Cruz González
-[Iryna Yevseyeva](https://scholar.google.com.ua/citations?user=ACBBH4AAAAAJ&hl=en)
+![Iryna Yevseyeva](https://scholar.google.com.ua/citations?user=ACBBH4AAAAAJ&hl=en)
