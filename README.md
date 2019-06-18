@@ -50,4 +50,5 @@ Generate IPTables rules
 [David Ruano Ordás](http://www.drordas.info).
 
 Bruno Cruz González.
-José R. Mendez
+
+José R. Méndez.
